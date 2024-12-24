@@ -29,6 +29,9 @@ public class Variables {
         System.out.println("\nBoleano V: " + aBoolean +
                             "\nBoleano F: " + aBooleanF);
                             
-        System.out.println("\nChar: " + aChar);                  
+        System.out.println("\nChar: " + aChar);    
+        
+        
+        System.out.println("");
     }
 }
