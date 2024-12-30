@@ -21,7 +21,7 @@ public class Operadores {
         
         // Usando instanceof mejorado
         if (obj instanceof String s) {
-            System.out.println("Longitud de la cadena: " + s.length());
+            System.out.println("Longitud de la cadena: " + s.length()+" "+s.hashCode());
         } else {
             System.out.println("El objeto no es una cadena.");
         }
