@@ -1,4 +1,4 @@
-# Proyecto de Java - Conceptos y Ejemplos Básicos
+# Proyecto de Java - Conceptos y Ejemplos
 
 Este repositorio contiene ejemplos y explicaciones básicas sobre Java, enfocados en aspectos fundamentales del lenguaje y el manejo de entrada del usuario. Está diseñado como una guía práctica para repasar conceptos esenciales y aprender a aplicarlos en programas simples.
 
