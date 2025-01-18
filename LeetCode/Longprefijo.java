@@ -3,7 +3,7 @@ public class Longprefijo {
         String[] strs = {"flower", "flow", "flight"};
         Solution solution = new Solution();
 
-        String resultado = solution.longestCommonPrefix(strs); // Aquí corregí el nombre del método.
+        String resultado = solution.longestCommonPrefix(strs); 
         System.out.println("Prefijo común más largo: " + resultado);
     }
 }
