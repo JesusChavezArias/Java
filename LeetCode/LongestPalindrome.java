@@ -44,6 +44,7 @@ class Solution {
 }
 */
 //Implementación del algoritmo de Manacher n(O):
+//https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
 class Solution {
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
