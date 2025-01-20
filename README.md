@@ -1,6 +1,6 @@
 # Proyecto de Java - Conceptos y Ejemplos
 
-Este repositorio contiene ejemplos y explicaciones básicas sobre Java, enfocados en aspectos fundamentales del lenguaje y el manejo de entrada del usuario. Está diseñado como una guía práctica para repasar conceptos esenciales y aprender a aplicarlos en programas simples.
+Este repositorio contiene ejemplos normales y de Leetcode usando Java, enfocados en aspectos fundamentales del lenguaje y el manejo de entrada del usuario. 
 
 ## Requisitos Previos
 - **Java Development Kit (JDK)**: Asegúrate de tener instalado Java 17 o una versión superior en mi caso usé el JDK de Amazon (Corretto-21.0.5.11.1 - OpenJDK Runtime Environment Corretto-21.0.5.11.1 (build 21.0.5+11-LTS)).
