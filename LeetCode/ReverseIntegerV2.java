@@ -52,11 +52,11 @@ class Solution {
         }
 
         if (s.charAt(s.length() - 1) == '0') {
-          if (reverseNumero.charAt(0) == '0') {
-            reverseNumero.deleteCharAt(0); // Elimina el primer carácter (el cero).
-          }else if(reverseNumero.charAt(0) == '-' && reverseNumero.charAt(1) == '0'){
-            reverseNumero.deleteCharAt(1);
-          }
+            if (reverseNumero.charAt(0) == '0') {
+                reverseNumero.deleteCharAt(0); // Elimina el primer carácter (el cero).
+            }else if(reverseNumero.charAt(0) == '-' && reverseNumero.charAt(1) == '0'){
+                reverseNumero.deleteCharAt(1);
+            }
         }
         //System.out.println("Cadena Invertida: " + reverseNumero);
         int x1 = 0;
