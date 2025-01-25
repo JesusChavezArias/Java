@@ -20,27 +20,20 @@ Because the one is before the five we subtract it making four. The same principl
 
 Given a roman numeral, convert it to an integer. */
 import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.HashSet;
 
 public class RomantoInteger {
     public static void main(String[] args) {
         String s = "IV";
         Solution solution = new Solution();
         int resultado = solution.romanToInt(s);
-        System.out.println(resultado);    
+        System.out.println(resultado); // Esto imprimirá 4    
     }
 }
 
 class Solution {
     public int romanToInt(String s) {
-        String k = "";
-        List<Integer> listaEnteros = new ArrayList<>();
+        // Mapa que asigna cada símbolo romano a su valor entero
         HashMap<Character, Integer> romanValor = new HashMap<>();
-        HashSet<Integer> conjuntoVLD = new HashSet<>();
-        
-        // Insertar los valores correspondientes
         romanValor.put('I', 1);
         romanValor.put('V', 5);
         romanValor.put('X', 10);
@@ -48,32 +41,22 @@ class Solution {
         romanValor.put('C', 100);
         romanValor.put('D', 500);
         romanValor.put('M', 1000);
-        
-        //System.out.println(s.length());
 
-        if (s.length() < 1 || s.length() > 15) {
-            return 0;
-        }
+        int total = 0;
 
-        // Iterar sobre cada carácter de la cadena s
+        // Iterar sobre el string de derecha a izquierda
         for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-
-            // Si el carácter no está en el mapa romanValor, devolver 0 (carácter no válido)
-            if (!romanValor.containsKey(c)) {
-                return 0;
+            // Obtener el valor actual del símbolo romano
+            int current = romanValor.get(s.charAt(i));
+            
+            // Si el valor actual es menor que el siguiente, se resta, de lo contrario se suma
+            if (i + 1 < s.length() && current < romanValor.get(s.charAt(i + 1))) {
+                total -= current; // Se resta
+            } else {
+                total += current; // Se suma
             }
         }
-        for(Character letra : s.toCharArray()){
-          //Integer valor = romanValor.get(letra);
-          listaEnteros.add(romanValor.get(letra));
-        }
-        System.out.println(listaEnteros);
-        //V, L, D
-        for (int i = 0; i < listaEnteros.size(); i++) {
-            
-        }
 
-        return 1;
+        return total;
     }
 }
