@@ -39,7 +39,18 @@ public class PowerofTwoV2 {
 }
 
 class Solution {
+    /**
+     * Método para verificar si un número es una potencia de dos.
+     * Un número es potencia de dos si tiene solo un bit '1' en su representación binaria.
+     * @param n El número a verificar
+     * @return true si n es una potencia de dos, false de lo contrario
+     */
     public boolean isPowerOfTwo(int n) {
-        return n > 0 && (n & (n - 1)) == 0;
+        // Un número es potencia de dos si es mayor que 0 y su representación binaria 
+        // tiene solo un '1', lo que significa que n & (n - 1) debe ser 0.
+        if (n <= 0) {
+            return false; // Cualquier número no positivo no es una potencia de dos
+        }
+        return (n & (n - 1)) == 0; // Verificamos si solo tiene un '1' en su representación binaria
     }
 }
