@@ -26,7 +26,7 @@ public class RomantoInteger {
         String s = "IV";
         Solution solution = new Solution();
         int resultado = solution.romanToInt(s);
-        System.out.println(resultado); // Esto imprimirá 4    
+        System.out.println(resultado);
     }
 }
 
